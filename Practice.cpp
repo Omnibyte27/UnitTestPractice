@@ -17,7 +17,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
   {
     int temp = first;
     first = third;
-    third = first;
+    third = temp;
   }
   if( second < third )
   {
@@ -34,8 +34,8 @@ void Practice::sortDescending(int & first, int & second, int & third)
 // character in the string, but disregarding case ('x' is the same as 'X')
 bool Practice::isPalindrome(string input)
 {
-  string length = input.size();
-  for(int i = 0; i < length ; i++)
+  int length = input.size();
+  for(int i = 0; i < length; i++)
   {
     if(input[i] != input[length - i - 1])
     return false;

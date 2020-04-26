@@ -93,7 +93,7 @@ TEST(PracticeTest, is_simple_palindrome5)
 TEST(PracticeTest, is_simple_palindrome6)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("Testing gnitsesT");
+    bool actual = obj.isPalindrome("Testing gnitseT");
     ASSERT_TRUE(actual);
 }
 

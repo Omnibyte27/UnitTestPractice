@@ -37,7 +37,7 @@ bool Practice::isPalindrome(string input)
   int length = input.size();
   for(int i = 0; i < length; i++)
   {
-    if(input[i] != input[length - i - 1])
+    if(tolower(input[i]) != tolower(input[length - i - 1]))
     return false;
   }
   return true;

@@ -27,7 +27,7 @@ TEST(PracticeTest, sortDescendingTest)
 		int first = 1;
 		int second = 2;
 		int third = 3;
-    bool actual = obj.sortDescending(first,second,third);
+    obj.sortDescending(first,second,third);
     ASSERT_TRUE(first > second && first > third && second > third);
 }
 

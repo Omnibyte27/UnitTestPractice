@@ -31,11 +31,31 @@ TEST(PracticeTest, sortDescendingTest)
     ASSERT_TRUE(first > second && first > third && second > third);
 }
 
+TEST(PracticeTest, sortDescendingTest2)
+{
+    Practice obj;
+		int first = 0;
+		int second = 0;
+		int third = 1;
+    obj.sortDescending(first,second,third);
+    ASSERT_TRUE(first > second && first > third && second > third);
+}
+
+TEST(PracticeTest, sortDescendingTest3)
+{
+    Practice obj;
+		int first = 3;
+		int second = 1;
+		int third = 1;
+    obj.sortDescending(first,second,third);
+    ASSERT_TRUE(first > second && first > third && second > third);
+}
+
 TEST(PracticeTest, is_simple_palindrome2)
 {
     Practice obj;
     bool actual = obj.isPalindrome("Ba");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, is_simple_palindrome3)

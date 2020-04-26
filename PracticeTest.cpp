@@ -38,7 +38,7 @@ TEST(PracticeTest, sortDescendingTest2)
 		int second = 0;
 		int third = 1;
     obj.sortDescending(first,second,third);
-    ASSERT_TRUE(first > second && first > third && second > third);
+    ASSERT_TRUE(first > second && first > third && second == third);
 }
 
 TEST(PracticeTest, sortDescendingTest3)
@@ -48,7 +48,7 @@ TEST(PracticeTest, sortDescendingTest3)
 		int second = 1;
 		int third = 1;
     obj.sortDescending(first,second,third);
-    ASSERT_TRUE(first > second && first > third && second > third);
+    ASSERT_TRUE(first > second && first > third && second >= third);
 }
 
 TEST(PracticeTest, is_simple_palindrome2)
